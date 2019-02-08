@@ -1,6 +1,6 @@
-'use strict'
-
-const db = require('./database')
+'use strict';
+const Candy = require('./models/Candy');
+const db = require('./database');
 
 // The purpose of this module is to bring your Sequelize instance (`db`) together
 // with your models (which you should define in separate modules in this directory).
@@ -17,5 +17,6 @@ const db = require('./database')
 
 module.exports = {
   // Include your models in this exports object as well!
-  db
-}
+  db,
+  Candy,
+};
